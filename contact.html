@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — LuxeBagStore</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FastBiz E-Shop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="logo">LuxeBagStore</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <h1 class="logo">FastBiz E-Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main class="contact-page">
-    <h1>Contact Us</h1>
-    <form id="contactForm" class="contact-form">
-      <label>
-        Name
-        <input type="text" name="name" required />
-      </label>
-      <label>
-        Email
-        <input type="email" name="email" required />
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <button class="btn" type="submit">Send Message</button>
-    </form>
-    <p class="note">This demo form will not send emails — connect with a backend or use Formspree/Netlify forms for production.</p>
-  </main>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Your Name" required>
+                
+                <label>Email:</label>
+                <input type="email" placeholder="Your Email" required>
+                
+                <label>Message:</label>
+                <textarea placeholder="Your Message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <footer class="site-footer">
-    <p>© 2025 LuxeBagStore</p>
-  </footer>
-
-  <script src="js/script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FastBiz E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
