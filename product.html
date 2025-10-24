@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Classic Tote</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">LuxeBagStore</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cartToggleProd">Cart (<span id="cart-count-prod">0</span>)</button>
+  </header>
+
+  <main class="product-page">
+    <div class="product-detail">
+      <img src="images/bag1.jpg" alt="Classic Tote" class="product-image" />
+      <div class="product-info">
+        <h1>Classic Tote</h1>
+        <p class="price">$120.00</p>
+        <p>Handcrafted leather tote — roomy, elegant, and built to last.</p>
+        <label>Quantity:
+          <input type="number" id="qty" value="1" min="1" />
+        </label>
+        <button class="btn" id="addToCartProd">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 LuxeBagStore</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

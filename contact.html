@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — LuxeBagStore</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">LuxeBagStore</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <h1>Contact Us</h1>
+    <form id="contactForm" class="contact-form">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    <p class="note">This demo form will not send emails — connect with a backend or use Formspree/Netlify forms for production.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 LuxeBagStore</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

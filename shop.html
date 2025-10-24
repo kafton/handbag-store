@@ -1,16 +1,42 @@
-<section class="products">
-  <div class="product">
-    <img src="images/bag1.jpg" alt="Classic Tote">
-    <h3>Classic Tote</h3>
-    <p>A timeless leather handbag.</p>
-    <p>$120</p>
-    <button>Add to Cart</button>
-  </div>
-  <div class="product">
-    <img src="images/bag2.jpg" alt="Chic Shoulder Bag">
-    <h3>Chic Shoulder Bag</h3>
-    <p>Perfect for daily use.</p>
-    <p>$95</p>
-    <button>Add to Cart</button>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — LuxeBagStore</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">LuxeBagStore</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cartToggleShop">Cart (<span id="cart-count-shop">0</span>)</button>
+  </header>
+
+  <main class="shop-main">
+    <h1>Shop All Handbags</h1>
+    <div class="products-grid" id="product-list">
+      <!-- JS will populate -->
+    </div>
+  </main>
+
+  <aside class="cart-panel" id="cartPanelShop">
+    <h3>Your Cart</h3>
+    <div id="cartItemsShop"></div>
+    <div class="cart-footer">
+      <div>Total: <strong id="cartTotalShop">$0.00</strong></div>
+      <button id="checkoutBtnShop" class="btn">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2025 LuxeBagStore</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
