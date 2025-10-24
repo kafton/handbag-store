@@ -1,44 +1,137 @@
-/* Basic modern responsive stylesheet for the handbag site */
-:root{
-  --accent:#b66;
-  --bg:#fff8f7;
-  --text:#222;
-  --muted:#666;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-*{box-sizing:border-box}
-body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:var(--text); background:var(--bg);}
-.site-header{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.06);position:sticky;top:0;z-index:10}
-.logo{font-weight:700;font-size:20px;color:var(--accent)}
-.nav a{margin:0 10px;text-decoration:none;color:var(--muted);font-weight:600}
-.nav a.active{color:var(--text)}
-.cart-btn{background:none;border:1px solid #eee;padding:8px 12px;border-radius:8px;cursor:pointer}
-.hero{height:60vh;background-image:url('../images/hero.jpg');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
-.hero-inner{background:rgba(0,0,0,0.25);padding:30px;border-radius:12px}
-.hero h1{font-size:32px;margin:0 0 8px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;border:none;cursor:pointer}
-.featured{padding:40px 24px}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.product-card{background:#fff;padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center}
-.product-card img{width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:12px}
-.product-card h3{margin:6px 0 4px;font-size:18px}
-.product-card p{margin:0 0 8px;color:var(--muted);font-size:14px}
-.price{font-weight:700;margin-bottom:12px}
-.site-footer{text-align:center;padding:20px 10px;color:var(--muted);font-size:14px;background:transparent}
 
-.about{padding:24px}
+body {
+    line-height: 1.6;
+    color: #333;
+}
 
-.contact-page, .shop-main{padding:24px}
-.contact-form{max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.contact-form input, .contact-form textarea{padding:10px;border-radius:8px;border:1px solid #e6e6e6}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
 
-.cart-panel{position:fixed;right:18px;top:90px;width:320px;background:#fff;padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.12);display:none;z-index:50}
-.cart-panel h3{margin:0 0 8px}
-.cart-footer{margin-top:12px;display:flex;justify-content:space-between;align-items:center}
+header {
+    background: #222;
+    color: #fff;
+    padding: 20px 0;
+}
 
-.product-page{padding:24px}
-.product-detail{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;max-width:1000px;margin:0 auto}
-.product-image{width:100%;border-radius:12px;object-fit:cover}
-@media(max-width:800px){
-  .product-detail{grid-template-columns:1fr}
-  .hero{height:45vh}
+header .logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a.active {
+    text-decoration: underline;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.features .feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.shop .products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shop .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+.shop .product img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
